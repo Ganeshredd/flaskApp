@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GITAM TECHNICAL CLUBS</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+	<div class="main">
+      		<div class="logo">
+      			<img src="{{url_for('static', filename='Images/logo.jpg')}}">
+      		</div>
+			  
+      	    <ul>
+      	    	<li><a href="/">Home</a></li>
+      	    	<li><a href="{{ url_for('contact') }}">Contact</a></li>
+      	    
+      	    	<li><a href="{{ url_for('about') }}">About</a></li>
+      	    </ul>	
+      	</div>
+    {% block main_content%} {% endblock %}
+</body>
+</html>

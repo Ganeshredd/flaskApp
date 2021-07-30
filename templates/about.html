@@ -1,0 +1,69 @@
+
+{% extends "layout.html" %}
+   {% block main_content %}
+    <div class="about-section">
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">About Us Page</h1>
+        
+      </div>
+      
+      <h2 style="text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static', filename='Images/download.jpg')}}" alt="Jane" style="width:20%">
+            <div class="container">
+              <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Ganesh</h2>
+              <p class="title"></p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">mike@example.com</p>
+              
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static', filename='Images/download.jpg')}}" alt="Mike" style="width:20%">
+            <div class="container">
+              <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Yogesh</h2>
+              <p class="title"></p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Steve@example.com</p>
+              
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static', filename='Images/download(3).jpg')}}" alt="John" style="width:20%">
+            <div class="container">
+              <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Priyanka</h2>
+              <p class="title"></p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">john@example.com</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static', filename='Images/download(3).jpg')}}" alt="John" style="width:20%">
+            <div class="container">
+              <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Ruhiya</h2>
+              <p class="title"></p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">john@example.com</p>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="{{ url_for('home') }}">Go back</a>
+    </div>
+
+   {%endblock%}

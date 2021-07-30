@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+    {% block main_content %}
+      <header>
+      	<div class="title">
+      		<h1>GITAM TECHNICAL CLUBS</h1>
+      	</div>
+      	<div class="button">
+      		<a href="{{ url_for('club1') }}" class="btn" target="_blank">GUSAC</a>
+      		<a href="{{ url_for('club2') }}" class="btn" target="_blank">SMART ARENA</a>
+      		<a href="{{ url_for('club3') }}" class="btn" target="_blank">CODING CLUB</a>
+      	</div>
+      </header>
+
+	  {%endblock%}
