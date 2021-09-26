@@ -1,8 +1,11 @@
 {% extends "layout.html" %}
     {% block main_content %}
       <header>
+		<div class="LOGIN">
+			<a href="{{ url_for('login') }}" class="btn" target="_blank">LOGIN</a>
+		</div>
       	<div class="title">
-      		<h1>GITAM TECHNICAL CLUBS</h1>
+      		<h1>GITAM TECHNICAL CLUBS</h1>			
       	</div>
       	<div class="button">
       		<a href="{{ url_for('club1') }}" class="btn" target="_blank">GUSAC</a>

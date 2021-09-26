@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+    {% block main_content %}
+      <div>
+        <div class="bg">
+          <h1>LOGIN</h1>
+        </div>
+        
+        <form action="{{ url_for("login")}}" method="POST">  
+          <div class="container">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="emailid" id="emailid" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            
+            <button type="submit" class="registerbtn">Login</button>
+            
+
+          </div>
+        </form>
+      </div>
+      <div>
+        <form action="/new">
+          <label>New to the GITAM Clubs Login?</label>
+          <input value="register" type="submit"> 
+        </form>
+      </div>
+      <a href="{{ url_for('home') }}">Go back</a>
+     </div>
+	  {%endblock%}

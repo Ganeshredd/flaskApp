@@ -29,10 +29,13 @@ ul li a{
 
 }
 
+
+
 ul li a:hover{
 	background-color: #fff;
 	color: #000;
 }
+
 
 .logo img{
 	float: right;
@@ -79,12 +82,12 @@ ul li a:hover{
 
 * {box-sizing: border-box}
 
-/* Add padding to containers */
+
 .container {
   padding: 16px;
 }
 
-/* Full-width input fields */
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -99,13 +102,13 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* Overwrite default styles of hr */
+
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
-/* Set a style for the submit/register button */
+
 .registerbtn {
   background-color: #04AA6D;
   color: white;
@@ -121,12 +124,12 @@ hr {
   opacity:1;
 }
 
-/* Add a blue text color to links */
+
 a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
+
 .signin {
   background-color: #f1f1f1;
   text-align: center;
@@ -205,7 +208,7 @@ html {
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px;  
-  border: 1px solid #ccc; 
+  border: 1px solid black; 
   border-radius: 4px;
   box-sizing: border-box; 
   margin-top: 6px; 
@@ -216,9 +219,9 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #04AA6D;
-  color: white;
+  color:black;
   padding: 12px 20px;
-  border: none;
+  border: black;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -228,10 +231,40 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+.bgh {
+  
+  height: 10vh;
+	background-size: cover;
+	background-position: center;
+  
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: black;
+}
+
+
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 20px;
 }
+
+.bg {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+
+.LOGIN {
+  float:right;
+  background-color: transparent;
+  padding: 25px ; 
+  
+}
+
+
 

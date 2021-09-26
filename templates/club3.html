@@ -2,13 +2,14 @@
 {% extends "layout.html" %}
     {% block main_content %}
     <div>
-        
+      <div>
+        <div class="bg">
+          <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">CODING CLUB</h1>
+        </div>
         
         <form action="{{ url_for("formOutput")}}" method="POST">
             <div class="container">
-              <hr>
-              <hr>
-              <h1 style="text-align:center">CODING CLUB</h1>
+              
               <p>Please fill in this form to create an account.</p>
               <hr>
           
@@ -27,10 +28,10 @@
             </div>
           
             <div class="container signin">
-              <p>Already have an account? <a href="#">Sign in</a>.</p>
+              <p>Already have an account? <a href="#">Login</a>.</p>
             </div>
           </form>
-        <a href="{{ url_for('home') }}">Go back</a>
+        <a href="{{ url_for('home') }}">Back</a>
        </div>
 
 	  {%endblock%}

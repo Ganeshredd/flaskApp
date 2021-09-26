@@ -1,3 +1,3 @@
 # flaskApp
  
-It is a website building using html & css with pyrhon
+It is a website building using html & css with python

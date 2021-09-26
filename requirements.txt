@@ -9,3 +9,4 @@ MarkupSafe==2.0.1
 pycodestyle==2.7.0
 toml==0.10.2
 Werkzeug==2.0.1
+yaml =5.4.1

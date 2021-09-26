@@ -1,21 +1,15 @@
 {% extends "layout.html" %}
     {% block main_content %}
     <div>
-        
+        <div class="bg">
+          <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">GUSAC</h1>
+        </div>
         
       <form action="{{ url_for("formOutput")}}" method="POST">
-        <style>
-         body{
-           background-image: url("img_gitam.jpg");
-           background-color:aquamarine;
-
-          }
-        </style> 
+        
           <div class="container">
-            <hr>
-            <hr>
             
-            <h1 style="text-align:center">GUSAC</h1>
+            
             <p>Please fill in this form to create an account.</p>
             <hr>
             <p> All the activities on Science and Engineering related to live projects and working models are encouraged under the umbrella of GITAM University Science Activity Centre (GUSAC), Bengaluru Campus. </p>
@@ -35,10 +29,10 @@
           </div>
         
           <div class="container signin">
-            <p>Already have an account? <a href="#">Sign in</a>.</p>
+            <p>Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
           </div>
         </form>
       </div>
-      <a href="{{ url_for('home') }}">Go back</a>
+      <a href="{{ url_for('home') }}">Back</a>
      </div>
 	  {%endblock%}
